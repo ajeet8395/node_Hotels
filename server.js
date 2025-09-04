@@ -23,7 +23,7 @@ app.get("/", (req, res) => {
 });
 
 const personRoutes = require("./routes/personRoutes"); // Import the person routes
-app.use("/person",localAuthMiddleware, personRoutes); // Use the person routes
+app.use("/person", personRoutes); // Use the person routes
 
 const menuRoutes = require("./routes/menuRoutes");
 app.use("/menu", menuRoutes);
